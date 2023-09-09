@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+:root {
+    --cor01: #173753;
+    --cor02: #1b4353;
+    --cor03: #1d70a2;
+    --cor04: #2892d7;
+    --cor05: #6daedb;
+}
+
+/*
+Mobile: 360px até 768px.
+Tablet: 768px até 1024px.
+Laptop: 1024px até 1440px.
+High-res laptop or desktop: 1440px...
+*/
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        background-image: linear-gradient(to top, var(--cor03), var(--cor04));
+    }
+
+    .login {
+        width: 80vw;
+        height: 355px;
+    }
+
+    .img {
+        width: 30%;
+        height: 100%;
+        float: left;
+    }
+
+    .form {
+        width: 70%;
+        float: right;
+    }
+
+    .form > p {
+        font-size: 1.1em;
+        margin: 15px 0;
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 1024px) {
+    body {
+        background-image: linear-gradient(to top, var(--cor03), var(--cor04));
+    }
+    
+    .login {
+        width: 70vw;
+        height: 395px;
+    }
+
+    .img {
+        width: 50%;
+        height: 100%;
+        float: left;
+    }
+
+    .form {
+        width: 50%;
+        float: right;
+    }
+
+    .form > h1 {
+        font-size: 2em;
+    }
+
+    .form > p {
+        font-size: 1.2em;
+        margin: 15px 0;
+    }
+}
